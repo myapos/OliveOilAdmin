@@ -1,0 +1,13 @@
+<h1>Add your Information</h1>
+<?php
+echo $this->Form->create('Factory');
+echo $this->Form->input('name');
+echo $this->Form->input('tax');
+echo $this->Form->input('type');
+echo $this->Form->input('region');
+echo $this->Form->input('county');
+echo $this->Form->input('telephone');
+echo $this->Form->button('Reset the Form', array('type' => 'reset'));
+echo $this->Form->button('Submit Form', array('type' => 'submit'));
+echo $this->Form->end('Save Post');
+?>

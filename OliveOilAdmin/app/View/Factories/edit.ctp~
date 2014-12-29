@@ -1,0 +1,14 @@
+<!-- File: /app/View/Posts/edit.ctp -->
+
+<h1>Edit your information</h1>
+<?php
+echo $this->Form->create('Factory');
+echo $this->Form->input('name');
+echo $this->Form->input('tax');
+echo $this->Form->input('type');
+echo $this->Form->input('region');
+echo $this->Form->input('type');
+echo $this->Form->input('telephone');
+echo $this->Form->input('id', array('type' => 'hidden'));
+echo $this->Form->end('Save Information');
+?>

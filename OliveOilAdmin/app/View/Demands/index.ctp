@@ -1,0 +1,195 @@
+<!-- File: /app/View/Offer/index.ctp -->
+<h1>User: Demand entry</h1>
+ <!-- <p><?php $names = array('NORMAL' => 'NORMAL', 'VIRGIN' => 'VIRGIN', 'BIOLOGICAL' => 'BIOLOGICAL');
+echo $this->Form->input('Select Product: ', array('options' => $names, 'default' => 'NORMAL')
+);   echo $this->Form->end('Save Product');?> -->
+ 
+ <!-- ?php echo $this->Html->link('Fill in offer', array('action' => 'addProduct')); -->
+
+</p>
+
+
+<!-- ################################## products ################################################# -->
+<div class="user index">
+	<h2>Products</h2>
+	<div class="table-responsive"> 
+	<table cellpadding="0" cellspacing="0" class="table table-bordered table-responsive table-hover">
+	<tr>
+			<th>id</th>
+			<th>name</th>
+	</tr>
+
+	<?php
+	$i = 0;
+	if(is_array($products)) {
+	foreach ($products as $product):
+		$class = null;
+		if ($i++ % 2 == 0) {
+			$class = ' class="altrow"';
+		}
+	?>
+	<tr<?php echo $class;?>>
+		<td><?php echo $product['Product']['id']; ?>&nbsp;</td>
+		<td><?php echo $product['Product']['name']; ?>&nbsp;</td>
+			<td>	
+			<ul>
+	    	<!--	<?php if ($current_user['id'] == $user['User']['id'] || $current_user['role'] == 'admin'): ?> -->
+	    		 
+		   	 <li><?php echo $this->Html->link('Edit Product', array('action' => 'editProduct', $product['Product']['id'])); ?> </li>
+		    	 <li><?php echo $this->Form->postLink('Delete product', array('action' => 'deleteProduct', $product['Product']['id']), array('confirm'=>'Are you sure you want to delete that user?')); ?> </li>
+				<!-- <?php endif; ?> -->
+			</ul>
+		</td> 
+	</tr>
+
+
+
+<?php endforeach; 
+
+} //end of if
+?>
+	</table>
+	</div>
+</div>
+
+
+
+<!-- ################################# properties ########################################## -->
+  		 
+<div class="posts index">
+	<h3>Product Properties</h3>
+	<div class="table-responsive"> 
+	<table cellpadding="0">
+  		 
+<div class="posts index">
+	<h2>Properties</h2>
+	<div class="table-responsive"> 
+	<table cellpadding="0" cellspacing="0" class="table table-bordered table-hover">
+	<tr>
+			<th>id</th>
+			<th>product_id</th>
+			<th>PH</th>
+			<th>package</th>
+			<th>certification</th>
+			<th> size </th>
+	</tr>
+
+	<?php
+	$i = 0;
+	if(is_array($properties)) {
+	foreach ($properties as $property):
+		$class = null;
+		if ($i++ % 2 == 0) {
+			$class = ' class="altrow"';
+		}
+	?>
+	<tr<?php echo $class;?>>
+		<td><?php echo $property['Property']['id']; ?>&nbsp;</td>
+		<td><?php echo $property['Property']['product_id']; ?>&nbsp;</td>
+		<td><?php echo $property['Property']['PH']; ?>&nbsp;</td>
+		<td><?php echo $property['Property']['package']; ?>&nbsp;</td>
+		<td><?php echo $property['Property']['certification']; ?>&nbsp;</td>
+		<td><?php echo $property['Property']['size']; ?>&nbsp;</td> 
+	
+	
+	 	<td>	
+			<ul>
+			
+	    		<!-- <?php 
+	    		//foreach ($offers as $offer):
+	    		if ($current_user['id'] == $demo['Demo']['user_id'] || $current_user['role'] == 'admin'): 
+	    	?> -->
+	    	
+		   	 <li><?php echo $this->Html->link('Edit Property', array('action' => 'editProperty', $property['Property']['id'])); ?> </li>
+		    	 <li><?php echo $this->Form->postLink('Delete Property', array('action' => 'deleteProperty', $property['Property']['id']), array('confirm'=>'Are you sure you want to delete that demo?')); ?> </li>
+
+			<!--	<?php endif; 
+				//endforeach; 
+				?> -->
+
+			</ul>
+		</td> 
+		
+		
+		
+	</tr>
+<?php endforeach; 
+
+} //end of if
+?>
+	</table>
+	</div>
+</div>
+
+
+<!-- ################################# offers new ########################################## -->
+  		 
+<div class="posts index">
+	<h3>Demands</h3>
+	<div class="table-responsive"> 
+	<table cellpadding="0">
+  		 
+<div class="posts index">
+	<h2>Demands</h2>
+	<div class="table-responsive"> 
+	<table cellpadding="0" cellspacing="0" class="table table-bordered table-hover">
+	<tr>
+			<th>id</th>
+			<th>country_id</th>
+			<th>product_id</th>
+			<th>quantity</th>
+			<th>price</th>
+	</tr>
+
+	<?php
+	$i = 0;
+	if(is_array($demands)) {
+	foreach ($demands as $demand):
+		$class = null;
+		if ($i++ % 2 == 0) {
+			$class = ' class="altrow"';
+		}
+	?>
+	<tr<?php echo $class;?>>
+		<td><?php echo $demand['Demand']['id']; ?>&nbsp;</td>
+		<td><?php echo $demand['Demand']['country_id']; ?>&nbsp;</td>
+		<td><?php echo $demand['Demand']['product_id']; ?>&nbsp;</td>
+		<td><?php echo $demand['Demand']['quantity']; ?>&nbsp;</td>
+		<td><?php echo $demand['Demand']['price']; ?>&nbsp;</td>
+		<!-- <td><?php echo $demand['Demand']['size']; ?>&nbsp;</td> -->
+	
+	
+	 	<td>	
+			<ul>
+			
+	    		<!-- <?php 
+	    		//foreach ($offers as $offer):
+	    		if ($current_user['id'] == $demo['Demo']['user_id'] || $current_user['role'] == 'admin'): 
+	    	?> -->
+	    	
+		   	 <li><?php echo $this->Html->link('Edit Demand', array('action' => 'editDemand', $demand['Demand']['id'])); ?> </li>
+		    	 <li><?php echo $this->Form->postLink('Delete Demand', array('action' => 'deleteDemand', $demand['Demand']['id']), array('confirm'=>'Are you sure you want to delete that demo?')); ?> </li>
+
+			<!--	<?php endif; 
+				//endforeach; 
+				?> -->
+
+			</ul>
+		</td> 
+		
+		
+		
+	</tr>
+<?php endforeach; 
+
+} //end of if
+?>
+	</table>
+	</div>
+</div>
+
+
+
+
+
+

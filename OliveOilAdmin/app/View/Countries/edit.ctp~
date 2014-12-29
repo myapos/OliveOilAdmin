@@ -1,0 +1,16 @@
+<!-- File: /app/View/Countries/edit.ctp -->
+
+<h1>Edit your information</h1>
+<?php
+echo $this->Form->create('Country');
+echo $this->Form->input('name');
+
+$zones = array('YES' => 'INSIDE EUROZONE','2' => 'OUTSIDE EUROZONE');
+echo $this->Form->input('euzone',
+    array('options' => $zones, 'default' => '1')
+);
+
+echo $this->Form->input('currency');
+
+echo $this->Form->end('Save Information');
+?>

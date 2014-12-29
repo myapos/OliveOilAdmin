@@ -1,0 +1,39 @@
+<?php
+class MatchingsController extends AppController {
+
+
+   public $name = 'Matchings';
+		// $uses is where you specify which models this controller uses
+    	
+	public $uses = array(
+     					   'User',
+       				   'Demo',
+       				   'Product',
+       				   'Offer',
+       				   'Factory',
+       				   'Demand',
+       				   'Country',
+       				   'Property'
+    						); 			//from this line we refer to both of our models demo and user
+	public function indexMatchings() {
+		$this->Demo->recursive = 0;
+		$this->User->recursive = 0;
+		$this->Product->recursive = 0;
+		$this->Offer->recursive = 0;
+		$this->Factory->recursive = 0;
+
+
+		$this->set('demos', $this->Demo->find('all'));
+		$this->set('users', $this->User->find('all'));
+		$this->set('products', $this->Product->find('all'));
+		$this->set('offers', $this->Offer->find('all'));
+		$this->set('factories', $this->Factory->find('all'));
+
+		//$this->set('offers', $offers);
+	}
+	
+	
+}
+
+
+?>

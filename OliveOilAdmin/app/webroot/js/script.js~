@@ -1,0 +1,15 @@
+//custom JS
+
+$(document).ready(function(){
+
+ 
+$('.col').responsiveEqualHeightGrid();		
+
+$('.wheel-button').wheelmenu({
+      animation: 'fly',
+      animationSpeed: 'medium',
+    	angle: 'all'
+ });
+
+
+});

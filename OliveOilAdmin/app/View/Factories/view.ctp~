@@ -1,0 +1,36 @@
+Array
+(
+    [0] => Array
+        (
+            [Buyer] => Array
+                (
+                    [id] => 1
+                    [title] => The title
+                    [body] => This is the post body.
+                    [created] => 2008-02-13 18:34:55
+                    [modified] =>
+                )
+        )
+    [1] => Array
+        (
+            [Buyer] => Array
+                (
+                    [id] => 2
+                    [title] => A title once again
+                    [body] => And the post body follows.
+                    [created] => 2008-02-13 18:34:56
+                    [modified] =>
+                )
+        )
+    [2] => Array
+        (
+            [Buyer] => Array
+                (
+                    [id] => 3
+                    [title] => Title strikes back
+                    [body] => This is really exciting! Not.
+                    [created] => 2008-02-13 18:34:57
+                    [modified] =>
+                )
+        )
+)

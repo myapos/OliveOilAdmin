@@ -1,0 +1,64 @@
+<!-- File: /app/View/Property/index.ctp -->
+<h1>User: Property entry</h1>
+<p><?php echo $this->Html->link('Fill in product property', array('action' => 'add')); ?></p>
+<table>
+    <tr>
+        <th> Product id</th>
+        <th> Product name</th>
+        <th> PH </th>
+        <th> Package type </th>
+        <th> Size (lt)</th>
+        <th> Certification </th>
+    </tr>
+
+<!-- Here's where we loop through our $posts array, printing out post info -->
+   <tr>
+    <?php foreach ($properties as $property): ?>
+     <td>
+            <?php echo $property['Property']['product_id']; ?>
+     </td>
+                
+         <td>
+            <?php echo $property['Property']['PH']; ?>
+        </td>
+         <td>
+            <?php echo $property['Property']['package']; ?>
+        </td>
+                <td>
+            <?php echo $property['Property']['size']; ?>
+        </td>
+         <td>
+            <?php echo $property['Property']['certification']; ?>
+        </td>
+        
+        
+  
+     <!--  <td><?php echo $property['Property']['id']; ?></td>
+        <td>
+            <?php
+                echo $this->Html->link(
+                    $property['Property']['name'],
+                    array('action' => 'view', $property['Property']['id'])
+                );
+            ?>
+        </td> -->
+        <td> 
+            <?php
+                echo $this->Form->postLink(
+                    'Delete',
+                    array('action' => 'delete', $property['Property']['id']),
+                    array('confirm' => 'Are you sure?')
+                );
+            ?>
+            <?php
+                echo $this->Html->link(
+                    'Edit', array('action' => 'edit', $property['Property']['id'])
+                );
+            ?>
+        </td>
+        
+        
+    </tr>
+    <?php endforeach; ?>
+
+</table>

@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+   RewriteRule ^(.*)$ /home/user460/public_html/cakephp-2.5.7/app/webroot/index.php?url=$1 [QSA,L]
+</IfModule>

@@ -1,0 +1,50 @@
+<div class="container-fluid">
+    <section class="container">
+		<div class="container-page">				
+			<div class="col-md-6">
+				<h3 class="dark-grey">Please login or register</h3>
+				<?php echo $this->Form->create();?>
+				
+				<?php echo $this->Form->input('username',array('class' => 'form-control'));?>
+				<?php echo $this->Form->input('password',array('class' => 'form-control'));?>
+				<?php 
+				//echo $this->Form->end('Submit',array('type'=>'password'));
+				echo $this->Form->submit(
+				'Login',
+				array('class' => 'btn btn-primary')
+				);?>
+			</div>
+		</div>
+	</section>
+</div>
+
+<!--
+<div class="actions">
+	<h3>Actions</h3>
+	<ul>
+		<li><?php echo $this->Html->link('Register User', array('action' => 'add')); ?></li>
+	</ul>
+</div>
+
+
+        <div id="login-module">
+            
+            <div class="account-wall">
+            <h1 class="text-center login-title">Please sign in</h1>
+                    <span class="glyphicon glyphicon-user"></span>
+                <form class="form-signin">
+                <input type="text" class="form-control" placeholder="Email" required autofocus>
+                <input type="password" class="form-control" placeholder="Password" required>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">
+                    Sign in</button>
+                <label class="checkbox text-center">
+                    <input type="checkbox" value="remember-me">
+                    Remember me
+                </label>
+                <a href="#" class="need-help">Need help? </a><span class="clearfix"></span>
+                <a href="#" class="text-center new-account">Create an account </a>
+                </form>
+            </div>
+            
+        </div>
+   -->

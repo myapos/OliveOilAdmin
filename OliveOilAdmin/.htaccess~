@@ -1,0 +1,5 @@
+<IfModule mod_rewrite.c>
+   RewriteEngine on
+   RewriteRule    ^$ /home/user460/public_html/cakephp-2.5.7/app/webroot/   [L]
+   RewriteRule    (.*) /home/user460/public_html/cakephp-2.5.7/app/webroot/$1 [L]
+</IfModule>

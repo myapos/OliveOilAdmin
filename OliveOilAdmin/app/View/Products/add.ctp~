@@ -1,0 +1,88 @@
+<h1>Add Post</h1>
+<?php
+echo $this->Form->create('Product');
+
+echo $this->Form->input('product_id', array('type' => 'text'));
+
+
+/*$names = array('OLIVE OIL' => 'OLIVE OIL', 'WINE' => 'WINE');
+echo $this->Form->input('name',
+    array('options' => $names, 'default' => 'OLIVE OIL')
+);*/
+
+/*$types = array('NORMAL' => 'NORMAL', 'VIRGIN' => 'VIRGIN', 'BIOLOGICAL' => 'BIOLOGICAL');
+echo $this->Form->input('type',
+    array('options' => $types, 'default' => 'NORMAL')
+);
+
+
+$phs = array('<2' => '<2', '2-4' => '2-4', '>4' => '>4');
+echo $this->Form->input('PH',
+    array('options' => $phs, 'default' => '2-4')
+);
+
+$packages = array('NONE' => 'NONE', 'BOTTLE' => 'BOTTLE', 'CONTAINER' => 'CONTAINER');
+echo $this->Form->input('package',
+    array('options' => $packages, 'default' => 'BOTTLE')
+);
+
+$sizes = array('<1' => '<1', '1-5' => '1-5', '>5' => '>5');
+echo $this->Form->input('size',
+    array('options' => $sizes, 'default' => '1-5')
+);
+
+
+$certifications = array('YES' => 'YES', 'NO' => 'NO');
+echo $this->Form->input('certification',
+    array('options' => $certifications, 'default' => 'YES')
+);
+
+echo $this->Form->select('type', array(
+    'PURE' => 'PURE',
+    'NORMAL' => 'NORMAL',
+    'BIOLOGICAL' => 'BIOLOGICAL'
+));
+
+
+
+
+echo $this->Form->input('field', array(
+    'options' => array(1, 2, 3, 4, 5),
+    'empty' => '(choose one)'));
+    
+
+    
+echo $this->Form->checkbox('published', array(
+    'value' => 'Y', 
+    'hiddenField' => 'N'));
+    
+    echo $this->Form->label('User.name', null, array('id' => 'user-label'));
+echo $this->Form->label('User.name', 'Your username', 'highlight');
+
+echo $this->Form->password('password');
+
+$options = array('M' => 'Male', 'F' => 'Female');
+echo $this->Form->select('gender', $options);
+
+
+
+
+$options = array(
+    'Value 1' => 'Label 1',
+    'Value 2' => 'Label 2'
+);
+echo $this->Form->select('Model.field', $options, array(
+    'multiple' => 'checkbox'
+));
+
+
+
+echo $this->Form->input('title');
+echo $this->Form->input('body', array('rows' => '3'));
+
+echo $this->Form->button('Reset the Form', array('type' => 'reset'));
+echo $this->Form->button('Submit Form', array('type' => 'submit'));
+*/
+
+echo $this->Form->end('Save Post');
+?>
