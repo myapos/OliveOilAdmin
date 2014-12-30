@@ -5,8 +5,6 @@ www.csd.uoc.gr and Monades Aristeias Logismikou http://ma.ellak.gr/
 
 Our team
 
-Apostolakis Myron
-Koutsogiannaki Maria
-Giakoumaki Dora
+Apostolakis Myron,Koutsogiannaki Maria, Giakoumaki Dora
 
 You can visit our application in the following url http://147.52.17.225/OliveOilAdmin/
