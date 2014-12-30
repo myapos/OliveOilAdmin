@@ -176,7 +176,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
   	<div class="container-fluid"> 
   	<div class="row">
   	<div class="col-md-4" > <!--.col-md-4--> 
-  		<h6>Copyright &copy; 2013 <?php echo $this->Html->link('OliveOilAdmin', '../');?></a></h6></div>
+  		<h6>Copyright &copy; 2014 <?php echo $this->Html->link('OliveOilAdmin', '../');?></a></h6></div>
   	<div class="col-md-4 " > <!--.col-md-4--> 
   		<h6>About Us</h6>
 		Please visit our web pages. 
