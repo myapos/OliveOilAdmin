@@ -18,24 +18,11 @@
 				<div class="carousel-inner">
 					<div class="item active" id="slide1">
 						<div class="carousel-caption">
-							<h4>Codeschool programmer 1</h4>
+							<h4>Codeschool programmer</h4>
 							<h5>Myros Apostolakis: <a href="mailto:myapos@gmail.com">myapos@gmail.com</a></h5> 
 						</div><!-- end carousel-caption-->
 					</div><!-- end item -->
-					
-					<div class="item" id="slide2">
-						<div class="carousel-caption">
-							<h4>Codeschool programmer 2</h4>
-							<h5>Maria Koutsogiannaki: <a href="mailto:mkoutsog@gmail.com">mkoutsog@gmail.com</a></h5>
-						</div><!-- end carousel-caption-->
-					</div><!-- end item -->
-					
-					<div class="item" id="slide3">
-						<div class="carousel-caption">
-							<h4>Codeschool programmer 3</h4>
-							<h5>Dora Yakumaki: <a href="mailto:yakumaki@csd.uoc.gr">yakumaki@csd.uoc.gr</a></h5>
-							</div><!-- end carousel-caption-->
-					</div><!-- end item -->
+
 				</div><!-- carousel-inner -->
 				
 				<!-- Controls -->

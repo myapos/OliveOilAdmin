@@ -178,21 +178,17 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
   	<div class="col-md-4" > <!--.col-md-4--> 
   		<h6>Copyright &copy; 2014 <?php echo $this->Html->link('OliveOilAdmin', '../');?></a></h6></div>
   	<div class="col-md-4 " > <!--.col-md-4--> 
-  		<h6>About Us</h6>
-		Please visit our web pages. 
+  		<h6>About Me</h6>
+		Please visit my web page. 
 		<ul>
 		 	<li><a href="http://myapos.oncrete.gr" target="_blank">Apostolakis Myron</a> </li>
-			<li> <a href="http://www.csd.uoc.gr/~mkoutsog/" target="_blank">Maria Koutsogiannaki</a> </li>
-		 	<li><a href="#">Dora Giakoumaki</a> </li>
 	   </ul>	
 		 
 	</div>
   	<div class="col-md-4 text-right" > <!--.col-md-4--> 
   	<h6>Coded with <span class="glyphicon glyphicon-heart"></span> by 
   		<ul>
-  		<li>Apostolakis Myron,</li>
-  		<li>Maria Koutsogiannaki, </li>
-  		<li>Dora Giakoumaki</li>
+  		<li>Apostolakis Myron</li>
   		</ul> 
   	</h6>
   	</div>
