@@ -18,6 +18,12 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
+// echo 'test'.$_ENV.'<br>';
+ 
+ // echo '<pre>'; var_dump(getenv('DB_HOST_OLIVE_OIL_ADMIN')); echo '</pre>';
+ // die('edw');
+ // echo '<pre>'; print_r($_ENV); echo '</pre>';
+
 /**
  * Use the DS to separate the directories in other defines
  */

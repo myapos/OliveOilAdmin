@@ -2,10 +2,10 @@
 
 $servername = "localhost";
 $username = "root";
-$password = "293585719";
+$password = "Apostolakis!__1981__!";
 $dbname = "cakephp";
 
-$link = mysqli_connect("localhost", "root", "293585719", "cakephp");
+$link = mysqli_connect("localhost", "root", "Apostolakis!__1981__!", "cakephp");
 
 /* check connection */
 if (mysqli_connect_errno()) {
